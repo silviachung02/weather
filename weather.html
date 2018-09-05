@@ -2,7 +2,7 @@
 <html>
 <head>
 <title>Weather Content</title>
-<link href="https://fonts.googleapis.com/css?family=Roboto:500,900,900i" rel="stylesheet">
+<link href="https://fonts.googleapis.com/css?family=Roboto:400,500,900,900i" rel="stylesheet">
 <link rel="stylesheet" href="weather.css">
 <meta charset="UTF-8">
 </head>
@@ -10,10 +10,39 @@
   <div class="header">
     <ul>
       <li id="header">Today's Forecast</li>
-      <li id="date">Wednesday, Sept. 5</li>
+      <li id="time">11:04 AM</li>
     </ul>
   </div>
   <div class="content">
+    <div class="weather-container">
+      <img id="today-weather-icon" src="./icons/sunny.svg" alt="Sunny Icon">
+    </div>
+    <div id="forecast-container">
+      <div id="forecast" class="flex-container">
+        <h2 id="temperature">93&deg</h2>
+        <div class="detailed-info">
+          <h2 id="location">Long Island City</h2>
+          <ul id="high-low-forecast" class="flex-container">
+            <li><img src="./icons/up-arrow.svg">96&deg</li>
+            <li><img src="./icons/down-arrow.svg">86&deg</li>
+          </ul>
+        </div>
+      </div>
+      <ul id="three-day-forecast-container" class="flex-container">
+        <li>
+          <h2 class="day">Friday</h2>
+          <img src="./icons/sunny.svg" alt="Sunny Icon">
+        </li>
+        <li>
+          <h2 class="day">Saturday</h2>
+          <img src="./icons/sunny.svg" alt="Sunny Icon">
+        </li>
+        <li>
+          <h2 class="day">Sunday</h2>
+          <img src="./icons/sunny.svg" alt="Sunny Icon">
+        </li>
+      </ul>
+    </div>
   </div>
 </body>
 </html>
