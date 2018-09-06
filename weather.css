@@ -49,7 +49,7 @@ h1, p {
 }
 #today-weather-icon {
   display: block;
-  height: 570px;
+  width: 570px;
   position: absolute;
   top: 0;
   left: 0;
@@ -98,6 +98,7 @@ ul#high-low-forecast img {
 #three-day-forecast-container li {
   text-align: center;
   width: 215px;
+  height: 368px;
 }
 .day {
   font-size: 50px;
@@ -107,7 +108,7 @@ ul#high-low-forecast img {
 
 @media only screen and (min-width: 1280px) {
   #today-weather-icon {
-    height: 328px;
+    width: 328px;
   }
   .content {
     background-color: #C1F4F0;
@@ -143,6 +144,7 @@ ul#high-low-forecast img {
   }
   #three-day-forecast-container li {
     width: 180px;
+    height: 310px;
   }
   ul#high-low-forecast li {
     font-size: 55px;
@@ -160,10 +162,16 @@ ul#high-low-forecast img {
     width: 900px;
   }
   #today-weather-icon {
-    height: 430px;
+    width: 430px;
   }
   ul#high-low-forecast img {
     margin-right: 20px;
   }
 
 }
+/*
+gradient for rainy/stormy day
+background: linear-gradient(0deg, #bfcfda, #3b4d5f); */
+
+/* gradient for snowy day
+linear-gradient(180deg, #d3cce3, #ffffff); */
